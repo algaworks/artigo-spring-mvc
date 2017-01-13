@@ -18,7 +18,7 @@ public class FuncionariosResource {
 	@Autowired
 	private Funcionarios funcionarios;
 	
-	@GetMapping("/todos")
+	@GetMapping
 	public List<Funcionario> todos() {
 		return funcionarios.findAll();
 	}

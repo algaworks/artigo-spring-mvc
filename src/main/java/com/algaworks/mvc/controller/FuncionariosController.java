@@ -34,7 +34,7 @@ public class FuncionariosController {
 	}
 	
 	@GetMapping
-	public ModelAndView lista() {
+	public ModelAndView listar() {
 		ModelAndView modelAndView = new ModelAndView("funcionario-lista.jsp");
 		modelAndView.addObject("funcionarios", funcionarios.findAll());
 		
